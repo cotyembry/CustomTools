@@ -1,4 +1,4 @@
-#login
+#logout
 
 use DateTime;
 
@@ -12,9 +12,9 @@ for($i = 0; $i < scalar @ARGV; $i++) {
 }
 
 
-$x = qx(echo "hi: $dateTimeString" > D:/Developer/CustomTools/AppData/loginLogoutStore/timesheet.md);
+$x = qx(echo $dateTimeString > D:/Developer/CustomTools/AppData/loginLogoutStore/timesheet.md);
 #capture the output of the command into a variable after its done
 $x = qx(git --git-dir=D:/Developer/CustomTools/AppData/loginLogoutStore/.git --work-tree=D:/Developer/CustomTools/AppData/loginLogoutStore/ add -A);
-$secondCommand = 'git --git-dir=D:/Developer/CustomTools/AppData/loginLogoutStore/.git --work-tree=D:/Developer/CustomTools/AppData/loginLogoutStore/ commit -m "logging in: ' . $ARGVString . '"';
+$secondCommand = 'git --git-dir=D:/Developer/CustomTools/AppData/loginLogoutStore/.git --work-tree=D:/Developer/CustomTools/AppData/loginLogoutStore/ commit -m "logging out: ' . $ARGVString . '"';
 $x = qx($secondCommand);
 $x = qx(git --git-dir=D:/Developer/CustomTools/AppData/loginLogoutStore/.git --work-tree=D:/Developer/CustomTools/AppData/loginLogoutStore/ push -f origin master);
