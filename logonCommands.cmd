@@ -1,17 +1,20 @@
-DOSKEY ls=dir
-DOSKEY del=rm
-DOSKEY c=cls
-DOSKEY clear=cls
-DOSKEY nrw=npm run webpack
-DOSKEY nrs=npm run start
-DOSKEY jamesroot=cd C:\Users\JEmbry\Developer\Freelancing\Test\JamesHenderson\root
-DOSKEY finder=explorer .
-DOSKEY n=start cmd.exe
-DOSKEY sbt="D:\ProgramFiles\Sublime Text 3\sublime_text.exe" $*
-DOSKEY pwd=cd
-DOSKEY pbcopy=clip
+doskey c=cls
+doskey clear=cls
+doskey ls=dir
+doskey sbt="C:\Program Files\Sublime Text 3\sublime_text.exe" $*
+doskey google=perl C:\Users\johnembry\Developer\customScripts\openChrome.pl
+doskey finder=explorer .
+doskey n=start C:\Windows\System32\cmd.exe /K C:\Users\johnembry\Developer\aliases\aliases.bat
+doskey nrs=npm run start
+doskey nrw=npm run webpack
+doskey pwd=cd
+doskey pbcopy=clip
+doskey gp="perl" C:\Users\johnembry\Developer\CustomTools\gp.pl $*
 
-DOSKEY vi="D:\ProgramFiles\Vim\vim80\gvim.exe" $*
-DOSKEY vi="D:\ProgramFiles\Vim\vim80\gvim.exe" $*
 
-DOSKEY gp="perl" D:\Developer\logonCommands\perlUtils\gp.pl $*
+doskey marsDiff="perl" C:\Users\johnembry\Developer\CustomTools\marsDiff.pl $*
+doskey marsdiff="perl" C:\Users\johnembry\Developer\CustomTools\marsDiff.pl $*
+doskey marsCommit="perl" C:\Users\johnembry\Developer\CustomTools\marsCommit.pl $*
+doskey marscommit="perl" C:\Users\johnembry\Developer\CustomTools\marsCommit.pl $*
+doskey marsReady="perl" C:\Users\johnembry\Developer\CustomTools\marsReady.pl $*
+doskey marsready="perl" C:\Users\johnembry\Developer\CustomTools\marsReady.pl $*
